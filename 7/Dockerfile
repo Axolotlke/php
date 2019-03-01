@@ -62,6 +62,7 @@ RUN set -xe; \
         libwebp=1.0.1-r0 \
         libxslt=1.1.32-r0 \
         libzip=1.5.1-r2 \
+        libssh2=1.8.0-r4 \
         make \
         mariadb-client=10.3.13-r0 \
         nano \
@@ -81,6 +82,7 @@ RUN set -xe; \
     \
     apk add --update --no-cache -t .wodby-php-build-deps \
         autoconf \
+        binutils \
         cmake \
         build-base \
         bzip2-dev \
@@ -100,8 +102,10 @@ RUN set -xe; \
         libwebp-dev \
         libxslt-dev \
         libzip-dev \
+        libssh2-dev \
         openldap-dev \
         pcre-dev \
+        php7-dev \
         postgresql-dev \
         rabbitmq-c-dev \
         tidyhtml-dev \
@@ -193,6 +197,7 @@ RUN set -xe; \
         oauth-2.0.3 \
         rdkafka-3.0.5 \
         redis-4.2.0 \
+        ssh2-1.1.2 \
         uuid-1.0.4 \
         yaml-2.0.4; \
     \
@@ -210,6 +215,7 @@ RUN set -xe; \
         oauth \
         redis \
         rdkafka \
+        ssh2 \
         uuid \
         yaml; \
     \
